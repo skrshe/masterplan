@@ -1,4 +1,4 @@
-![MasterPlan](https://img.itch.zone/aW1hZ2UvNTAxNDc3LzcyMTg3MDAucG5n/original/i2wVmP.png)
+![MasterPlan](https://img.itch.zone/aW1hZ2UvNTAxNDc3LzcyNDE5MDguanBn/original/GqbW8c.jpg)
 
 MasterPlan is a customizeable graphical project management software for independent users or small teams. 
 
