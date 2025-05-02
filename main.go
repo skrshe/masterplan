@@ -498,6 +498,12 @@ func main() {
 
 		globals.MenuSystem.Update()
 
+		if globals.Keybindings.Pressed(KBToggleToolbarMenu) {
+			if menu := globals.MenuSystem.Get("main"); menu != nil {
+				menu.Opened = !menu.Opened
+			}
+		}
+
 		globals.Project.Update()
 
 		globals.Keybindings.On = true
