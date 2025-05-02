@@ -498,6 +498,16 @@ func main() {
 
 		globals.MenuSystem.Update()
 
+		// toggle toolbar menu
+		//
+		// TODO(skrshe): better to merge this into MenuSystem.Update
+		// to stay consistant
+		if globals.Keybindings.Pressed(KBToggleToolbar) {
+			if menu := globals.MenuSystem.Get("main"); menu != nil {
+				menu.Opened = !menu.Opened
+			}
+		}
+
 		globals.Project.Update()
 
 		globals.Keybindings.On = true
@@ -533,7 +543,7 @@ func main() {
 		if globals.Settings.Get(SettingsOutlineWindow).AsBool() {
 			ThickRect(0, 0, screenWidth, screenHeight, 4, getThemeColor(GUICompletedColor))
 		}
-
+		
 		// Loading a project
 		if globals.NextProject != nil {
 			globals.Project.Destroy()
